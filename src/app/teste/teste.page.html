@@ -1,9 +1,44 @@
 <ion-header translucent="primary">
   <ion-toolbar color="primary">
-    <ion-title>Teste</ion-title>
+    <ion-title>Cadastro do aluno(a)</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+    <ion-list>
+      
+        <ion-item>
+            <ion-label position="floating">Nome da aluno(a): </ion-label>
+            <ion-input type="text" [(ngModel)]="nome"></ion-input>
+        </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Idade: </ion-label>
+        <ion-input type="text" [(ngModel)]="email"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">RA: </ion-label>
+        <ion-input type="password" [(ngModel)]="senha"></ion-input>
+      </ion-item>
+
+      <ion-item>
+          <ion-label position="floating">Estado: </ion-label>
+          <ion-input type="password" [(ngModel)]="confirmarsenha"></ion-input>
+      </ion-item>
+
+      <ion-item>
+          <ion-label position="floating">Cidade: </ion-label>
+          <ion-input type="password" [(ngModel)]="confirmarsenha"></ion-input>
+      </ion-item>
+
+      <ion-item>
+          <ion-label position="floating">Observações: </ion-label>
+          <ion-textarea></ion-textarea>
+      </ion-item>
+  
+    </ion-list>
+  
+    <ion-button fill="solid" expand="block" color="dark" (click)="register()">Registrar</ion-button>
 
 </ion-content>
